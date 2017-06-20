@@ -25,3 +25,24 @@ def combArray(a, b)
 end
 combArray [:toyota, :tesla], ["Prius", "Model S"]
 
+#Write a function that prints the numbers from 1 to 100, except:
+
+#for multiples of three print "Fizz" instead of the number
+#for multiples of five print "Buzz"
+#Print "FizzBuzz" for numbers that are multiples of both 3 and 5.
+
+def reprint(number)
+	(1..100).each do |i|
+		if i % 3 == 0 and i % 5 == 0
+			puts 'FizzBuzz'
+		elsif i % 5 == 0
+			puts 'Buzz'
+		elsif i % 3 == 0 
+			puts 'Fizz'		
+		else
+			puts i		
+		end
+	end
+end
+reprint '50'
+
